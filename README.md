@@ -1,5 +1,4 @@
-# Nulab
-Cacoo API Demo
+# Nulab - Cacoo API Demo
 
 Login ID: admin
 
