@@ -20,49 +20,30 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.33" level="application_server_libraries" />
+    <orderEntry type="library" name="jQuery-2.0.0" level="application" />
+    <orderEntry type="library" name="jQuery UI-1.10.2" level="application" />
+    <orderEntry type="library" name="Knockout-2.2.1" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/httpcore-4.2.1.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/cacoo-api-sample-master/WebContent/WEB-INF/lib/gson-2.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/cacoo-api-sample-master/WebContent/WEB-INF/lib/httpclient-4.2.1.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/cacoo-api-sample-master/WebContent/WEB-INF/lib/httpcore-4.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/cacoo-api-sample-master/WebContent/WEB-INF/lib/gson-2.2.2-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/httpclient-4.2.1.jar!/" />
-        </CLASSES>
+        <CLASSES />
         <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/gson-2.2.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/commons-codec-1.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jstl-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/httpclient-4.2.1-sources.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/httpcore-4.2.1-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
