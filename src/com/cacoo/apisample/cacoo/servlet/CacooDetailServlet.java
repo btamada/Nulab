@@ -47,13 +47,13 @@ public class CacooDetailServlet extends HttpServlet {
 			}
 
 			// Create a map to hold the diagram comments
-			List<Map<String, String>> comments = new ArrayList<Map<String,String>>();
+			List<Map<String, String>> comments = new ArrayList<>();
 			request.setAttribute("comments", comments);
 			JsonArray jsonComments = root.get("comments").getAsJsonArray();
 			for(int i=0; i<jsonComments.size(); i++) {
 				JsonObject c = jsonComments.get(i).getAsJsonObject();
 				JsonObject user = c.get("user").getAsJsonObject();
-				Map<String,String> map = new HashMap<String, String>();
+				Map<String,String> map = new HashMap<>();
 				comments.add(map);
 				map.put("imageUrl", user.get("imageUrl").getAsString());
 				map.put("userName", user.get("nickname").getAsString());

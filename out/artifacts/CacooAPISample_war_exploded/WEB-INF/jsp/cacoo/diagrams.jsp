@@ -20,13 +20,14 @@
                     <p>UID: <%=request.getAttribute("uid") %></p>
                     <p>Name: <%=request.getAttribute("userName") %></p>
                     <p>Account Type: <%=request.getAttribute("type") %></p>
+                    </br>
                 </div>
 				<button id="acctInfoBtn">Hide Account Information</button>
 				</br>
 				</br>
-				</br>
                 <div id="diagStatHide">
                     <h3>Diagram Statistics: </h3>
+                    <button onclick="location.href='create'">Create New Diagram</button>
                     <p>Plan Type: <%=request.getAttribute("plan")%></p>
                     <p>Remaing Diagrams: <%=request.getAttribute("remainingSheets")%></p>
                     <p>Remaining Shared Folders: <%=request.getAttribute("remainingSharedFolders")%></p>

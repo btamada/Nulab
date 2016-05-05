@@ -9,12 +9,8 @@
 	<body>
 		<div>
 			<h1>Copy Diagram</h1>
-			
-			<div style="text-align: center"><%=request.getAttribute("message") %></div>
-			
-			<div>
-				<a id="mainMenu" href="<%=request.getContextPath()%>/cacoo/">Main Menu</a>
-			</div>
+			<p style="text-align:center"><%=request.getAttribute("message") %></p>
+			<a style="display:inherit" href="<%=request.getContextPath()%>/cacoo/">Main Menu</a>
 		</div>
 	</body>
 </html>

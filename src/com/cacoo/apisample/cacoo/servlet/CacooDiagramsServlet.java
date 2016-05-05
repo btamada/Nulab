@@ -62,7 +62,7 @@ public class CacooDiagramsServlet extends HttpServlet {
 			res = CacooUtils.cacooApi(request, response, "api/v1/diagrams.json", null);
 
             // Check if user has been authenticated with OAuth
-            if(res == null){
+            if(res == null) {
 				return;
 			}
 
@@ -76,7 +76,7 @@ public class CacooDiagramsServlet extends HttpServlet {
             // Store list of diagrams in a map for retrieval after redirect
 			for(int i = 0; i < result.size(); i++){
 				JsonObject diagram = result.get(i).getAsJsonObject();
-				Map<String, String> map = new HashMap<String, String>();
+				Map<String, String> map = new HashMap<>();
 				diagrams.add(map);
 				map.put("diagramId", diagram.get("diagramId").getAsString());
 				map.put("title", diagram.get("title").getAsString());

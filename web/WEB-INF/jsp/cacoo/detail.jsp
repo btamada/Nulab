@@ -28,19 +28,19 @@
 				</table>
 			</div>
 			<hr>
-			<h2>Comments</h2>
-			<% for(Map<String,String> comments: (List<Map<String,String>>)request.getAttribute("comments")) { %>
-				<div style="margin: 5px 50px;">
-					<div><img src="<%=comments.get("imageUrl") %>"> <%=comments.get("userName") %></div>
-					<div style="margin-left:50px; padding:5px;"><%=comments.get("comment") %></div>
-				</div>
-			<% } %>
-			<div>
-				<form action="comment" method="post">
-					<input type="hidden" name="diagramId" value="<%=request.getAttribute("diagramId") %>">
-					<textarea name="comment" rows="5" cols="40"></textarea>
-					<button type="submit">Submit</button>
-				</form>
+			<div style="text-align: center;">
+				<h2>Comments</h2>
+				<% for(Map<String,String> comments: (List<Map<String,String>>)request.getAttribute("comments")) { %>
+					<div style="margin: 5px 50px;">
+						<div><img src="<%=comments.get("imageUrl") %>"> <%=comments.get("userName") %></div>
+						<div style="margin-left:50px; padding:5px;"><%=comments.get("comment") %></div>
+					</div>
+				<% } %>
+					<form action="comment" method="post">
+						<input type="hidden" name="diagramId" value="<%=request.getAttribute("diagramId") %>">
+						<textarea name="comment" rows="5" cols="40"></textarea>
+						<p><button type="submit">Submit</button></p>
+					</form>
 			</div>
 			<div>
 				<a id="mainMenu" href="<%=request.getContextPath()%>/cacoo/">Main Menu</a>

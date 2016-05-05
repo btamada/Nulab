@@ -39,7 +39,7 @@ public class CacooCopyInputServlet extends HttpServlet {
 			if(res.getStatusLine().getStatusCode() != 200){
 				request.setAttribute("message", "Error : " + res.getStatusLine().getReasonPhrase() + " (" + res.getStatusLine().getStatusCode()+")");
 			}else{
-				request.setAttribute("message", "Diagrams has copied.");
+				request.setAttribute("message", "Diagrams has been copied");
 			}
 			request.getRequestDispatcher("/WEB-INF/jsp/cacoo/copy_done.jsp").forward(request, response);
 
